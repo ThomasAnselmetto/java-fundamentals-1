@@ -17,14 +17,18 @@ public class FizzBuzz {
         System.out.println("quante caselle vuoi?");
         int numeroCaselleUtente = Scanner.nextInt();
 
+//    aggiunto il bonus creo una condizione per la quale se il numero e' minore di 0 o maggiore di 1000 non entra nel ciclo
 //    ciclo mettendo come limite il numero scelto dall'utente' creo una serie di condizioni per le quali se i resto numero(3-5-multiplo di entrambi) == 0 stampo cio' che e' richiesto dalla traccia
 
+    if (numeroCaselleUtente > 0 && numeroCaselleUtente < 1000){
         for (int i = 1; i < numeroCaselleUtente; i++) {
             if (i % 5 == 0 && i % 3 == 0) System.out.println("FizzBuzz");
             else if (i % 5 == 0) System.out.println("Buzz");
             else if(i % 3 == 0) System.out.println("Fizz");
             else System.out.println(i);
-        }
+        }}else{
+        System.out.println("Il numero scelto non e' valido");
+    }
 
 
     }
