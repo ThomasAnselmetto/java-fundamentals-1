@@ -11,6 +11,7 @@
 
         package org.lessons.java;
         import java.util.Scanner;
+        import java.text.DecimalFormat;
 
 public class BigliettoTreno {
         public static void main(String[] args) {
@@ -39,8 +40,8 @@ public class BigliettoTreno {
                         prezzo = prezzo * scontoJunior;
                 }
 
-
-                System.out.println("Il prezzo sara' di " + prezzo + "€ per la tua  tratta " );
+                String prezzoFinale = new DecimalFormat("######.##").format(prezzo);
+                System.out.println("Il prezzo sara' di " + prezzoFinale + "€ per la tua  tratta " );
 
 
 
