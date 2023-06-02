@@ -30,6 +30,7 @@ public class FizzBuzz {
         System.out.println("Il numero scelto non e' valido");
     }
 
+//    ponderare refactoring con il ciclo for partente da (int i = 1) tanto non sto ciclando un array mannaggia a me
 
     }
 }
