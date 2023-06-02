@@ -19,7 +19,7 @@ public class FizzBuzz {
 
 //    aggiunto il bonus creo una condizione per la quale se il numero e' minore di 0 o maggiore di 1000 non entra nel ciclo
 //    ciclo mettendo come limite il numero scelto dall'utente' creo una serie di condizioni per le quali se i resto numero(3-5-multiplo di entrambi) == 0 stampo cio' che e' richiesto dalla traccia
-
+try{
     if (numeroCaselleUtente > 0 && numeroCaselleUtente < 1000){
         for (int i = 1; i < numeroCaselleUtente; i++) {
             if (i % 5 == 0 && i % 3 == 0) System.out.println("FizzBuzz");
@@ -29,8 +29,14 @@ public class FizzBuzz {
         }}else{
         System.out.println("Il numero scelto non e' valido");
     }
+}catch(Exception e){
+    System.out.println("Ti ho chiesto un numero da 1 a 999 non penso sia difficile!");
+}finally{
+    System.out.println("e' stato eseguito tutto il codice");
+}}
+
 
 //    ponderare refactoring con il ciclo for partente da (int i = 1) tanto non sto ciclando un array mannaggia a me
 
-    }
 }
+
